@@ -89,11 +89,20 @@ public class Empleado {
 	public void setCarnet(boolean carnet) {
 		this.carnet = carnet;
 	}
+	public void setCarnet1(boolean carnet) {
+		this.carnet = sueldo > 2000;
+	}
 	public float getSueldo() {
 		return sueldo;
 	}
 	public void setSueldo(float sueldo) {
 		this.sueldo = sueldo;
 	}
+	@Override
+	public String toString() {
+		return "Empleado [dni=" + dni + ", nombre=" + nombre + ", apellido=" + apellido + ", categoria=" + categoria
+				+ ", edad=" + edad + ", carnet=" + carnet + ", sueldo=" + sueldo + "]";
+	}
+	
 }
 
